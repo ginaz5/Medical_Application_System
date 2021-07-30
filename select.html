@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>病歷申請</title>
+	</head>
+	<body>
+		<form action="test.php" method="get">
+			<p>申請項目</p>
+			<select id="college-list" onchange="changeCollege(this.selectedIndex)"></select>
+			<br>
+            <br>
+            <p>申請內容皆為英文病歷</p>
+            <select id="sector-list"></select>
+            <input type="submit" value="Submit">
+		</form>
+		
+		<script type="text/javascript">
+			var colleges=['門診病歷','住院病歷','新生兒病歷'];
+			var collegeSelect=document.getElementById("college-list");
+			var inner="";
+			for(var i=0;i<colleges.length;i++){
+				inner=inner+'<option value=i>'+colleges[i]+'</option>';
+			}
+			collegeSelect.innerHTML=inner;
+			
+			
+			var sectors=new Array();
+			sectors[0]=['門、急診病歷', '病理報告', '檢驗報告', '心電圖', '放射科', '超音波', '內視鏡', '手術記錄', '診斷證明書', '其他'];
+			sectors[1]=['住院病歷摘要','病理報告', '檢驗報告', '心電圖', '放射科', '超音波', '內視鏡', '手術記錄', '診斷證明書', '其他'];	
+			sectors[2]=['體檢紀錄表', '檢驗報告', '腳印', '超音波', '其他'];	
+			function changeCollege(index){
+				var Sinner="";
+				for(var i=0;i<sectors[index].length;i++){
+					Sinner=Sinner+'<option value=i>'+sectors[index][i]+'</option>';
+				}
+				var sectorSelect=document.getElementById("sector-list");
+				sectorSelect.innerHTML=Sinner;
+			}
+			changeCollege(document.getElementById("college-list").selectedIndex);
+        </script>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>病歷申請</title>
+	</head>
+<body>
+
+<h1>病歷申請</h1>
+
+<p>This is a test form</p>
+
+<form action="test.php", method="GET">
+  <label for="med_record">申請項目:</label>
+  <select name="med_record" id="record_type" required>>
+    <option disabled selected value> -- 請選擇欲申請病歷項目 -- </option>
+    <optgroup label="門診">
+      <option value="OPD_1">門、急診病歷</option>
+      <option value="OPD_2">病理報告</option>
+      <option value="OPD_3">檢驗報告</option>
+      <option value="OPD_4">心電圖</option>
+      <option value="OPD_5">放射科</option>
+      <option value="OPD_6">超音波</option>
+      <option value="OPD_7">內視鏡</option>
+      <option value="OPD_8">手術記錄</option>
+      <option value="OPD_9">診斷證明書</option>
+      <option value="OPD_10">其他</option>
+    </optgroup>
+
+    <optgroup label="住院病歷">
+      <option value="IPT_1">住院病歷摘要</option>
+      <option value="IPT_2">病理報告</option>
+      <option value="IPT_3">檢驗報告</option>
+      <option value="IPT_4">心電圖</option>
+      <option value="IPT_5">放射科</option>
+      <option value="IPT_6">超音波</option>
+      <option value="IPT_7">內視鏡</option>
+      <option value="IPT_8">手術記錄</option>
+      <option value="IPT_9">診斷證明書</option>
+      <option value="IPT_10">其他</option>
+
+    </optgroup>
+    <optgroup label="新生兒病歷">
+        <option value="baby_1">體檢紀錄表</option>
+        <option value="baby_2">檢驗報告</option>
+        <option value="baby_3">腳印</option>
+        <option value="baby_4">超音波</option>
+        <option value="baby_5">其他</option>
+    </optgroup>
+  </select>
+
+  <br><br>
+
+
+  <h1>Show a Date Control</h1>
+
+  <label for="apply_date">申請日期:</label>
+  <input type="date" id="apply_date" name="apply_date">
+
+  <input type="reset" value="reset">
+  <input type="submit" value="Submit">
+</form>
+ 
+</body>
+</html>

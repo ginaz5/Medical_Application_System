@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>申請病歷</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <div class="super_container">
+
+        <header class="header trans_200">
+
+            <!-- Top Bar -->
+
+            <div class="top_bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+                                <!-- Top Bar <div class="top_bar_item"><a href="#">常見問題</a></div>
+                                <div class="top_bar_item"><a href="#">線上掛號</a></div>
+                                <div
+                                    class="emergencies  d-flex flex-row align-items-center justify-content-start ml-auto">
+                                    24小時緊急專線:（02）2708-1166 </div>
+                            </div>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Header Content -->
+                <div class="header_container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="header_content d-flex flex-row align-items-center justify-content-start ">
+                                    <nav class="main_nav ml-auto">
+                                        <ul>
+                                            <li><a href="Insert.html">_______</a></li>
+                                            <li><a href="Search.html">查詢資料</a></li>
+                                            <li><a href="services.html">修改資料</a></li>
+                                            <li><a href="news.html">分析報表</a></li>
+                                            <li><a href="Manual.html">系統手冊</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo -->
+                <div class="logo_container_outer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="logo_container">
+                                    <a href="index.html">
+                                        <div
+                                            class="logo_content d-flex flex-column align-items-start justify-content-center">
+                                            <div class="logo_line"></div>
+                                            <div class="logo d-flex flex-row align-items-center justify-content-center">
+                                                <div class="logo_text">中山<span>醫院</span></div>
+                                                <div class="logo_box">+</div>
+                                            </div>
+                                            <div class="logo_sub">Chung Shan Hospital</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </header>
+        <!--
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    -->
+        <style>
+            /*********************************
+3. Header
+*********************************/
+
+            .header {
+                display: block;
+
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: #FFFFFF;
+                z-index: 100;
+            }
+
+            .header.scrolled {
+                top: -48px;
+            }
+
+            /*********************************
+3.1 Top Bar
+*********************************/
+
+            .top_bar {
+                width: 100%;
+                background: #283290;
+            }
+
+            .top_bar_content {
+                width: 100%;
+                height: 48px;
+                padding-left: 214px;
+            }
+
+            .top_bar_item {
+                margin-left: 33px;
+            }
+
+            .top_bar_item a {
+                font-size: 14px;
+                color: #FFFFFF;
+                -webkit-transition: all 200ms ease;
+                -moz-transition: all 200ms ease;
+                -ms-transition: all 200ms ease;
+                -o-transition: all 200ms ease;
+                transition: all 200ms ease;
+            }
+
+            .top_bar_item:first-child {
+                margin-left: 37px;
+            }
+
+
+            /*********************************
+3.2 Header Content
+*********************************/
+
+            .header_container {
+                width: 100%;
+                background: #FFFFFF;
+
+            }
+
+            .header_content {
+                width: 100%;
+                height: 103px;
+
+            }
+
+            .header.scrolled .header_content {
+                height: 80px;
+
+            }
+
+            .main_nav ul li {
+                display: inline-block;
+                float: right;
+            }
+
+            .main_nav ul li:not(:first-child) {
+                margin-left: 32px;
+
+            }
+
+            .main_nav ul li a {
+                font-size: 16px;
+                font-weight: 500;
+                color: #323232;
+
+            }
+
+
+            /*********************************
+3.3 Logo
+*********************************/
+
+            .logo_container_outer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            .logo_container {
+                position: absolute;
+                top: 0;
+                left: 150px;
+                width: 216px;
+                height: 177px;
+                background: #FFFFFF;
+                box-shadow: 0px 31px 29px rgba(0, 0, 0, 0.09);
+                z-index: 10;
+                -webkit-transition: all 200ms ease;
+                -moz-transition: all 200ms ease;
+                -ms-transition: all 200ms ease;
+                -o-transition: all 200ms ease;
+                transition: all 200ms ease;
+            }
+
+            .header.scrolled .logo_container {
+                top: 48px;
+                height: 120px;
+            }
+
+            .logo_container a {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            .logo_content {
+                width: 100%;
+                height: 100%;
+                padding-left: 36px;
+            }
+
+            .logo_line {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 4px;
+                background: #20d34a;
+            }
+
+            .logo {
+                margin-top: 27px;
+            }
+
+            .logo span {
+                color: #20d34a;
+            }
+
+            .logo_container a .logo:hover {
+                color: #283290;
+            }
+
+            .logo_text {
+                font-size: 30px;
+                font-weight: 500;
+                color: #283290;
+                line-height: 0.75;
+            }
+
+            .logo_box {
+                display: inline-block;
+                width: 23px;
+                height: 23px;
+                background: #20d34a;
+                color: #FFFFFF;
+                font-size: 24px;
+                line-height: 23px;
+                text-align: center;
+                -webkit-transform: translateY(-2px);
+                -moz-transform: translateY(-2px);
+                -ms-transform: translateY(-2px);
+                -o-transform: translateY(-2px);
+                transform: translateY(-2px);
+                margin-left: 1px;
+            }
+
+            .logo_sub {
+                font-size: 14px;
+                font-weight: 400;
+                color: #8f8e8e;
+                padding-left: 3px;
+                margin-top: 2px;
+            }
+
+
+            /*********************************
+Form
+*********************************/
+            html,
+            body {
+                min-height: 100%;
+            }
+
+            body,
+            div,
+            form,
+            input,
+            select,
+            textarea,
+            p {
+                padding: 0;
+                margin: 0;
+                outline: none;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 14px;
+                color: #666;
+                line-height: 22px;
+            }
+
+            h1 {
+                position: absolute;
+                margin: 0;
+                font-size: 32px;
+                color: #fff;
+                z-index: 2;
+            }
+
+            h5 {
+                margin: 10px 0;
+            }
+
+            .testbox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: inherit;
+                padding: 20px;
+            }
+
+            form {
+                width: 100%;
+                padding: 20px;
+                border-radius: 6px;
+                background: #fff;
+                box-shadow: 0 0 20px 0 #095484;
+            }
+
+            .banner {
+                position: relative;
+                height: 210px;
+                background-image: url("/uploads/media/default/0001/01/c43630149befa5c9559813f72e99bcb6bf149e62.jpeg");
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .banner::after {
+                content: "";
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            input,
+            select,
+            textarea {
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            input {
+                width: calc(100% - 10px);
+                padding: 5px;
+            }
+
+            select {
+                width: 100%;
+                padding: 7px 0;
+                background: transparent;
+            }
+
+            textarea {
+                width: calc(100% - 12px);
+                padding: 5px;
+            }
+
+            .item:hover p,
+            .item:hover i,
+            .question:hover p,
+            .question label:hover,
+            input:hover::placeholder,
+            a {
+                color: #095484;
+            }
+
+            .item input:hover,
+            .item select:hover,
+            .item textarea:hover {
+                border: 1px solid transparent;
+                box-shadow: 0 0 6px 0 #095484;
+                color: #095484;
+            }
+
+            .item {
+                position: relative;
+                margin: 10px 0;
+            }
+
+            input[type="date"]::-webkit-inner-spin-button {
+                display: none;
+            }
+
+            .item i,
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                position: absolute;
+                font-size: 20px;
+                color: #a9a9a9;
+            }
+
+            .item i {
+                right: 2%;
+                top: 30px;
+                z-index: 1;
+            }
+
+            [type="date"]::-webkit-calendar-picker-indicator {
+                right: 1%;
+                z-index: 2;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            input[type=radio],
+            input[type=checkbox] {
+                display: none;
+            }
+
+            label.radio,
+            label.check {
+                position: relative;
+                display: inline-block;
+                margin: 5px 20px 15px 0;
+                cursor: pointer;
+            }
+
+            .question span {
+                margin-left: 30px;
+            }
+
+            span.required {
+                margin-left: 0;
+                color: red;
+            }
+
+            .checkbox-item label {
+                margin: 5px 20px 10px 0;
+            }
+
+            label.radio:before,
+            label.check:before {
+                content: "";
+                position: absolute;
+                left: 0;
+            }
+
+            label.radio:before {
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                border: 2px solid #095484;
+            }
+
+            label.check:before {
+                top: 2px;
+                width: 16px;
+                height: 16px;
+                border-radius: 2px;
+                border: 1px solid #095484;
+            }
+
+            input[type=checkbox]:checked+.check:before {
+                background: #095484;
+            }
+
+            label.radio:after {
+                left: 5px;
+                border: 3px solid #095484;
+            }
+
+            label.check:after {
+                left: 4px;
+                border: 3px solid #fff;
+            }
+
+            label.radio:after,
+            label.check:after {
+                content: "";
+                position: absolute;
+                top: 6px;
+                width: 8px;
+                height: 4px;
+                background: transparent;
+                border-top: none;
+                border-right: none;
+                transform: rotate(-45deg);
+                opacity: 0;
+            }
+
+            input[type=radio]:checked+label:after,
+            input[type=checkbox]:checked+label:after {
+                opacity: 1;
+            }
+
+            .btn-block {
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            button {
+                width: 150px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background: #095484;
+                font-size: 16px;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: #0666a3;
+            }
+
+            @media (min-width: 568px) {
+                .city-item {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+
+                .city-item input {
+                    width: calc(50% - 20px);
+                }
+
+                .city-item select {
+                    width: calc(50% - 8px);
+                }
+            }
+        </style>
+        </head>
+
+
+        <body>
+
+
+            <div class="testbox">
+                <form action="Insert.php" method="POST" accept-charset="UTF-8" >
+                    <div class="banner">
+                        <h1>病歷資料影印本申請單</h1>
+                    </div>
+                    <div class="item">
+                        <p>申請日期</p>
+                        <input type="date" name="apply_date" required value="2021-07-13"/>
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                   
+                    <div class="item">
+                        <p>申請人資料<span class="required">*</span></p>
+                        <div class="applicant-item">
+                            <input type="text" name="a-Name" placeholder="姓名" required />
+                            <input type="text" name="aRecordNum" placeholder="病歷號碼" required />
+                            <input type="text" name="aPhone" placeholder="連絡電話" required />
+                            <input type="text" name="aID" placeholder="身份證字號" required />
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p>代理申請人資料(無則免填)</p>
+                        <div class="agent-item">
+                            <input type="text" name="ag-Name" placeholder="姓名"  />
+                            <input type="text" name="agRelation" placeholder="與病患關係"  />
+                            <input type="text" name="agPhone" placeholder="連絡電話"  />
+                            <input type="text" name="agID" placeholder="身份證字號"  />
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p>證明文件<span class="required">*</span></p>
+                        <select name="proofDoc" id='proofDoc'required>
+                            <option disabled selected value> -- 請選擇 -- </option>
+                            <option value="0">委託書正本</option>
+                            <option value="1">病患重症昏迷, 相關文件</option>
+                            <option value="2">病患死亡, 死亡證明書</option>
+                            <option value="3">病患未成年, 戶口名簿正本</option>
+                        </select>
+
+                    </div>
+                    <div class="item">
+                        <p>申請原因<span class="required">*</span></p>
+                        <select name="reason" id='reason' required>
+                            <option disabled selected value> -- 請選擇 -- </option>
+                            <option value="0">轉院</option>
+                            <option value="1">自行保留</option>
+                            <option value="2">投保</option>
+                            <option value="3">理賠</option>
+                            <option value="4">其他</option>
+                        </select>
+
+
+                    </div>
+                    <p>申請項目<span class="required">*</span></p>
+                    
+                    <select name="med_record" id="record_type" required>>
+                        <option disabled selected value> -- 請選擇 -- </option>
+                        <optgroup label="門診">
+                            <option value="OPD_1">門、急診病歷</option>
+                            <option value="OPD_2">病理報告</option>
+                            <option value="OPD_3">檢驗報告</option>
+                            <option value="OPD_4">心電圖</option>
+                            <option value="OPD_5">放射科</option>
+                            <option value="OPD_6">超音波</option>
+                            <option value="OPD_7">內視鏡</option>
+                            <option value="OPD_8">手術記錄</option>
+                            <option value="OPD_9">診斷證明書</option>
+                            <option value="OPD_10">其他</option>
+                        </optgroup>
+
+                        <optgroup label="住院病歷">
+                            <option value="IPT_1">住院病歷摘要</option>
+                            <option value="IPT_2">病理報告</option>
+                            <option value="IPT_3">檢驗報告</option>
+                            <option value="IPT_4">心電圖</option>
+                            <option value="IPT_5">放射科</option>
+                            <option value="IPT_6">超音波</option>
+                            <option value="IPT_7">內視鏡</option>
+                            <option value="IPT_8">手術記錄</option>
+                            <option value="IPT_9">診斷證明書</option>
+                            <option value="IPT_10">其他</option>
+
+                        </optgroup>
+                        <optgroup label="新生兒病歷">
+                            <option value="baby_1">體檢紀錄表</option>
+                            <option value="baby_2">檢驗報告</option>
+                            <option value="baby_3">腳印</option>
+                            <option value="baby_4">超音波</option>
+                            <option value="baby_5">其他</option>
+                        </optgroup>
+                    </select>
+
+
+
+
+                    <div class="item">
+                        <p>主治醫師姓名<span class="required">*</span></p>
+                        <input type="text" name="drName" required />
+                    </div>
+                   
+              
+                    
+                    <br />
+                    <div class="question">
+                        <p>我已經詳細閱讀並同意:<span class="required">*</span>
+                        </p>
+                        <div class="question-answer checkbox-item">
+                            <div>
+                                <input type="checkbox" value="none" id="check_9" name="check" required />
+                                <label for="check_9" class="check"><span>I agree to the <a
+                                            href="https://www.w3docs.com/privacy-policy">terms of service.</a></span></label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="btn-block">
+                        <button type="reset">清除</button>
+                        <button type="submit">送出</button>
+                        
+                    </div>
+                </form>
+            </div>
+
+
+
+    </div>
+</body>
+
+</html>
